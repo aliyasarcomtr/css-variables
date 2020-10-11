@@ -1,0 +1,32 @@
+body,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 150%;
+}
+.container{
+    position: relative;
+    width: 1170px;
+    height: auto;
+    margin:  0 auto;
+}
+.container ul li{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: var(--color1); 
+    color: var(--color3);
+    font-family: var(--font1);
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 960px){
+    .container ul li{
+        width: var(--width); 
+        font-size: var(--fontsize2);
+        font-family: var(--font2);
+        margin-bottom: var(--marginbottom);
+    }
+    .container ul li:nth-child(2){
+        height: var(--height);
+    }
+}
